@@ -1,54 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    style="@style/main_activity"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    style="@style/mainActivity"
     android:divider="@drawable/buttons_separator"
     android:showDividers="middle"
     android:weightSum="3">
 
     <androidx.appcompat.widget.Toolbar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:title="@string/main_title"
-        app:titleTextColor="@color/white"
-        android:paddingVertical="12dp" />
+        style="@style/toolbar"
+        app:title="@string/main_title" />
 
     <Button
         android:id="@+id/buttonSearch"
-        style="@style/main_activity_button"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        style="@style/mainActivityButton"
         app:icon="@drawable/search"
-        app:iconGravity="textStart"
-        app:iconPadding="@dimen/iconPaddingMain"
-        app:iconTint="@color/black"
-        app:cornerRadius="@dimen/indent"
         android:text="@string/search"/>
 
     <Button
         android:id="@+id/buttonLibrary"
-        style="@style/main_activity_button"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        style="@style/mainActivityButton"
         app:icon="@drawable/library"
-        app:iconGravity="textStart"
-        app:iconPadding="@dimen/iconPaddingMain"
-        app:iconTint="@color/black"
-        app:cornerRadius="@dimen/indent"
         android:text="@string/library"/>
 
     <Button
         android:id="@+id/buttonSettings"
-        style="@style/main_activity_button"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        style="@style/mainActivityButton"
         app:icon="@drawable/settings"
-        app:iconGravity="textStart"
-        app:iconPadding="@dimen/iconPaddingMain"
-        app:iconTint="@color/black"
-        app:cornerRadius="@dimen/indent"
         android:text="@string/settings"/>
 
 </LinearLayout>

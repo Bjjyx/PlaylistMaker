@@ -10,7 +10,7 @@ class SettingsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_settings)
 
-        val buttonSettingsBack = findViewById<Toolbar>(R.id.back_to_main)
+        val buttonSettingsBack = findViewById<Toolbar>(R.id.settingsToolbar)
 
         buttonSettingsBack.setOnClickListener {
             val mainActivityIntent = Intent(this, MainActivity::class.java)

@@ -2,53 +2,47 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingVertical="4dp"
-    android:orientation="vertical"
+    style="@style/mainActivity"
+    android:background="@color/white"
     tools:ignore="UseSwitchCompatOrMaterialXml">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/back_to_main"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/toolbar"
+        android:id="@+id/settingsToolbar"
         android:clickable="true"
+        app:titleTextColor="@color/black"
         app:navigationIcon="@drawable/arrow_back"
         app:title="@string/settings"/>
 
     <androidx.appcompat.widget.SwitchCompat
-        android:id="@+id/theme_switch"
+        android:id="@+id/themeSwitch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingVertical="24dp"
         android:paddingHorizontal="16dp"
         android:text="@string/dark_theme"
         android:textSize="@dimen/text_list_size"
+        android:fontFamily="@font/ys_display_regular"
+        android:textFontWeight="400"
         android:textColor="@color/black"
         android:backgroundTint="@color/white"/>
 
 
     <TextView
-        style="@style/settings_list"
+        style="@style/settingsList"
         android:id="@+id/share"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:text="@string/to_share"
         app:drawableEndCompat="@drawable/share"/>
 
     <TextView
-        style="@style/settings_list"
+        style="@style/settingsList"
         android:id="@+id/support"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:text="@string/support"
         app:drawableEndCompat="@drawable/support"/>
 
     <TextView
-        style="@style/settings_list"
+        style="@style/settingsList"
         android:id="@+id/agreement"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:text="@string/agreement"
         app:drawableEndCompat="@drawable/arrow_forward"/>
 
