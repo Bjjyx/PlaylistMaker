@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="main_activity_button">
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_title_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginHorizontal">16dp</item>
+    </style>
+    <style name="main_activity">
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">24dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/blue</item>
+    </style>
+    <style name="settings_list">
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:paddingHorizontal">@dimen/indent</item>
+        <item name="android:paddingVertical">24dp</item>
+        <item name="android:textSize">@dimen/text_list_size</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:clickable">true</item>
+    </style>
+</resources>
