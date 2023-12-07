@@ -7,4 +7,6 @@
     <color name="blue700">#304FFE</color>
     <color name="gray700">#616161</color>
     <color name="lightIcons">#AEAFB4</color>
+    <color name="YPLightGray">#E6E8EB</color>
+    <color name="YPTextGray">#AEAFB4</color>
 </resources>

@@ -12,15 +12,10 @@
         app:navigationIcon="@drawable/arrow_back"
         app:title="@string/settings"/>
 
-    <androidx.appcompat.widget.SwitchCompat
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        style="@style/switchTheme"
         android:id="@+id/themeSwitch"
         android:layout_marginTop="@dimen/size24"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingVertical="@dimen/size24"
-        android:paddingHorizontal="@dimen/size16"
-        app:trackTint="@color/blueLight"
-        app:thumbTint="@color/blue"
         android:text="@string/dark_theme"
         android:textSize="@dimen/text_list_size"
         android:fontFamily="@font/ys_display_regular"

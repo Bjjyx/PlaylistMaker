@@ -40,4 +40,12 @@
         <item name="android:textColorSecondary">@color/white</item>
         <item name="actionBarSize">56dp</item>
     </style>
+    <style name="switchTheme" parent="Widget.AppCompat.CompoundButton.Switch">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingVertical">@dimen/size24</item>
+        <item name="android:paddingHorizontal">@dimen/size16</item>
+        <item name="thumbTint">@color/thumb_switch_selector</item>
+        <item name="trackTint">@color/track_switch_selector</item>
+    </style>
 </resources>
