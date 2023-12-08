@@ -10,6 +10,21 @@
         <item name="android:drawableTint">@color/lightIcons</item>
     </style>
 
+    <style name="editTextLayoutTheme" parent="Base.Theme.PlaylistMaker">
+        <item name="android:background">@drawable/search_shape_day</item>
+    </style>
+
+    <style name="editTextTheme" parent="Base.Theme.PlaylistMaker">
+        <item name="android:background">@color/YPLightGray</item>
+        <item name="android:textColorHint">@color/YPTextGray</item>
+        <item name="drawableTint">@color/YPTextGray</item>
+    </style>
+
+    <style name="imagesViewSearchTheme" parent="Base.Theme.PlaylistMaker">
+        <item name="tint">@color/YPTextGray</item>
+        <item name="backgroundTint">@color/YPLightGray</item>
+    </style>
+
     <style name="Theme.MainActivity" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="colorPrimaryDark">@color/blue700</item>
         <item name="android:navigationBarColor">@color/blue700</item>

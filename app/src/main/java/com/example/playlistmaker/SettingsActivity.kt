@@ -14,14 +14,14 @@ class SettingsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_settings)
 
-        val buttonSettingsBack = findViewById<Toolbar>(R.id.settingsToolbar)
+        val settingsToolbar = findViewById<Toolbar>(R.id.settingsToolbar)
         val buttonShare = findViewById<TextView>(R.id.share)
         val buttonSupport = findViewById<TextView>(R.id.support)
         val buttonAgreement = findViewById<TextView>(R.id.agreement)
 
-        buttonSettingsBack.setOnClickListener {
-            val mainActivityIntent = Intent(this, MainActivity::class.java)
-            startActivity(mainActivityIntent)
+        settingsToolbar.setOnClickListener {
+            val settingsToolbarIntent = Intent(this, MainActivity::class.java)
+            startActivity(settingsToolbarIntent)
         }
         buttonShare.setOnClickListener {
             val shareIntent = Intent(Intent.ACTION_SEND)

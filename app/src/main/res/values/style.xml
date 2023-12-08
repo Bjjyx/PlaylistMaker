@@ -8,7 +8,7 @@
         <item name="android:textStyle">bold</item>
         <item name="android:layout_marginHorizontal">@dimen/size16</item>
         <item name="iconGravity">textStart</item>
-        <item name="iconPadding">@dimen/iconPaddingMain</item>
+        <item name="iconPadding">@dimen/size8</item>
         <item name="iconTint">@color/black</item>
         <item name="cornerRadius">@dimen/indent</item>
         <item name="android:layout_width">match_parent</item>
@@ -47,5 +47,27 @@
         <item name="android:paddingHorizontal">@dimen/size16</item>
         <item name="thumbTint">@color/thumb_switch_selector</item>
         <item name="trackTint">@color/track_switch_selector</item>
+    </style>
+    <style name="editTextLayout" parent="editTextLayoutTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginHorizontal">@dimen/indent</item>
+        <item name="android:layout_marginVertical">@dimen/size8</item>
+        <item name="android:paddingVertical">@dimen/size8</item>
+        <item name="android:paddingHorizontal">@dimen/indent</item>
+    </style>
+    <style name="editText" parent="editTextTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:lines">1</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/text_list_size</item>
+        <item name="android:drawablePadding">@dimen/size8</item>
+    </style>
+    <style name="clear" parent="imagesViewSearchTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">end|center_vertical</item>
+        <item name="android:visibility">gone</item>
     </style>
 </resources>
