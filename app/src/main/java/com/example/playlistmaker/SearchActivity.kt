@@ -12,21 +12,23 @@ import androidx.appcompat.widget.Toolbar
 
 class SearchActivity : AppCompatActivity() {
 
-    private var savedString: CharSequence = STRING_DEF
+    private var savedString: CharSequence = ""
+
+    private lateinit var searchEditText: EditText
 
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
-        outState.putString(SAVED_STRING, savedString.toString())
+        outState.putString(SAVED_EDIT_TEXT, savedString.toString())
     }
 
     override fun onRestoreInstanceState(savedInstanceState: Bundle) {
         super.onRestoreInstanceState(savedInstanceState)
-        savedString = savedInstanceState.getString(SAVED_STRING, STRING_DEF)
+        savedString = savedInstanceState.getString(SAVED_EDIT_TEXT).toString()
+        searchEditText.setText(savedString)
     }
 
     companion object {
-        const val SAVED_STRING = "SAVED_STRING"
-        const val STRING_DEF = ""
+        const val SAVED_EDIT_TEXT = "SAVED_EDIT_TEXT"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -34,7 +36,7 @@ class SearchActivity : AppCompatActivity() {
         setContentView(R.layout.activity_search)
 
         val searchToolbar = findViewById<Toolbar>(R.id.searchToolbar)
-        val searchEditText = findViewById<EditText>(R.id.searchEditText)
+        searchEditText = findViewById(R.id.searchEditText)
         val clearButton = findViewById<ImageView>(R.id.clearButton)
 
         searchToolbar.setOnClickListener {
@@ -61,7 +63,6 @@ class SearchActivity : AppCompatActivity() {
             }
         }
 
-        searchEditText.setText(savedString)
         searchEditText.addTextChangedListener(searchTextWatcher)
 
     }
